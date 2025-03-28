@@ -1,0 +1,25 @@
+{"level":"info","message":"Arithmetic microservice is listening on port 3040","service":"calculator-microservice"}
+{"level":"info","message":"Addition operation with parameters 12 and 10","service":"calculator-microservice"}
+{"level":"info","message":"Addition operation with parameters 12 and 11","service":"calculator-microservice"}
+{"level":"info","message":"Addition operation with parameters 12 and 111","service":"calculator-microservice"}
+{"level":"info","message":"Addition operation with parameters 12 and 1","service":"calculator-microservice"}
+{"level":"info","message":"Addition operation with parameters 12 and 1","service":"calculator-microservice"}
+{"level":"info","message":"Multiplication operation with parameters 12 and 0","service":"calculator-microservice"}
+{"level":"info","message":"Multiplication operation with parameters 0 and 0","service":"calculator-microservice"}
+{"level":"info","message":"Multiplication operation with parameters 0 and 0","service":"calculator-microservice"}
+{"level":"info","message":"Multiplication operation with parameters 1 and 0","service":"calculator-microservice"}
+{"level":"info","message":"Multiplication operation with parameters 1 and 0","service":"calculator-microservice"}
+{"level":"info","message":"Multiplication operation with parameters 11 and 0","service":"calculator-microservice"}
+{"level":"info","message":"Multiplication operation with parameters 11 and 0","service":"calculator-microservice"}
+{"level":"info","message":"Multiplication operation with parameters -1 and 0","service":"calculator-microservice"}
+{"level":"error","message":"n1 is incorrectly defined","service":"calculator-microservice"}
+{"level":"info","message":"Multiplication operation with parameters -1 and 0","service":"calculator-microservice"}
+{"level":"error","message":"n1 is incorrectly defined","service":"calculator-microservice"}
+{"level":"error","message":"n1 is incorrectly defined","service":"calculator-microservice"}
+{"level":"info","message":"Multiplication operation with parameters 9 and 0","service":"calculator-microservice"}
+{"level":"error","message":"n2 is incorrectly defined","service":"calculator-microservice"}
+{"level":"error","message":"n2 is incorrectly defined","service":"calculator-microservice"}
+{"level":"info","message":"Multiplication operation with parameters 9 and 0","service":"calculator-microservice"}
+{"level":"info","message":"Division operation with parameters 9 and 0","service":"calculator-microservice"}
+{"level":"error","message":"Division error: Division by zero is not allowed","service":"calculator-microservice"}
+{"level":"error","message":"n1 is incorrectly defined","service":"calculator-microservice"}
