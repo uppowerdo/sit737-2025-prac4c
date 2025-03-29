@@ -32,3 +32,9 @@
 {"level":"info","message":"Square root operation with parameter 9","service":"calculator-microservice"}
 {"level":"info","message":"Modulo operation with parameters 9 and 2","service":"calculator-microservice"}
 {"level":"info","message":"Modulo operation with parameters 9 and 5","service":"calculator-microservice"}
+{"level":"info","message":"Arithmetic microservice is listening on port 3040","service":"calculator-microservice"}
+{"level":"info","message":"Modulo operation with parameters 9 and 5","service":"calculator-microservice"}
+{"level":"info","message":"Square root operation with parameter 9","service":"calculator-microservice"}
+{"level":"info","message":"Square root operation with parameter 0","service":"calculator-microservice"}
+{"level":"error","message":"Cannot calculate square root of negative number","service":"calculator-microservice"}
+{"level":"error","message":"n1 is incorrectly defined","service":"calculator-microservice"}

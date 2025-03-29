@@ -122,10 +122,23 @@ app.get("/exponentiation", validateNumbers, (req, res) => {
     }
 });
 //square_root endpoint
-app.get("/square_root", validateNumbers, (req, res) => {
+app.get("/square_root", (req, res) => {
     try {
-        logger.info(`Square root operation with parameter ${req.n1}`);
-        const result = operations.square_root(req.n1);
+        const n1 = parseFloat(req.query.n1);
+        
+        // Validate input
+        if (isNaN(n1)) {
+            logger.error("n1 is incorrectly defined");
+            return res.status(400).json({ statuscode: 400, msg: "n1 is not a valid number" });
+        }
+
+        if (n1 < 0) {
+            logger.error("Cannot calculate square root of negative number");
+            return res.status(400).json({ statuscode: 400, msg: "Cannot calculate square root of negative number" });
+        }
+
+        logger.info(`Square root operation with parameter ${n1}`);
+        const result = operations.square_root(n1);
         res.status(200).json({ statuscode: 200, data: result });
     } catch (error) {
         logger.error(`Square root error: ${error.message}`);
