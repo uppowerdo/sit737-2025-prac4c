@@ -39,7 +39,10 @@ const operations = {
     divide: (n1, n2) => {
         if (n2 === 0) throw new Error("Division by zero is not allowed");
         return n1 / n2;
-    }
+    },
+    exponentiation: (n1, n2) => n1 ** n2,
+    square_root: (n1) => Math.sqrt(n1),
+    modulo: (n1, n2) => n1 % n2,
 };
 
 // Middleware to validate numbers
@@ -104,6 +107,39 @@ app.get("/divide", validateNumbers, (req, res) => {
         res.status(200).json({ statuscode: 200, data: result });
     } catch (error) {
         logger.error(`Division error: ${error.message}`);
+        res.status(500).json({ statuscode: 500, msg: error.message });
+    }
+});
+//exponentiation endpoint
+app.get("/exponentiation", validateNumbers, (req, res) => {
+    try {
+        logger.info(`Exponentiation operation with parameters ${req.n1} and ${req.n2}`);
+        const result = operations.exponentiation(req.n1, req.n2);
+        res.status(200).json({ statuscode: 200, data: result });
+    } catch (error) {
+        logger.error(`Exponentiation error: ${error.message}`);
+        res.status(500).json({ statuscode: 500, msg: error.message });
+    }
+});
+//square_root endpoint
+app.get("/square_root", validateNumbers, (req, res) => {
+    try {
+        logger.info(`Square root operation with parameter ${req.n1}`);
+        const result = operations.square_root(req.n1);
+        res.status(200).json({ statuscode: 200, data: result });
+    } catch (error) {
+        logger.error(`Square root error: ${error.message}`);
+        res.status(500).json({ statuscode: 500, msg: error.message });
+    }
+});
+//modulo endpoint
+app.get("/modulo", validateNumbers, (req, res) => {
+    try {
+        logger.info(`Modulo operation with parameters ${req.n1} and ${req.n2}`);
+        const result = operations.modulo(req.n1, req.n2);
+        res.status(200).json({ statuscode: 200, data: result });
+    } catch (error) {
+        logger.error(`Modulo error: ${error.message}`);
         res.status(500).json({ statuscode: 500, msg: error.message });
     }
 });

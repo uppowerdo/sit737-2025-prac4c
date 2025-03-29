@@ -23,3 +23,12 @@
 {"level":"info","message":"Division operation with parameters 9 and 0","service":"calculator-microservice"}
 {"level":"error","message":"Division error: Division by zero is not allowed","service":"calculator-microservice"}
 {"level":"error","message":"n1 is incorrectly defined","service":"calculator-microservice"}
+{"level":"info","message":"Arithmetic microservice is listening on port 3040","service":"calculator-microservice"}
+{"level":"info","message":"Division operation with parameters 9 and 0","service":"calculator-microservice"}
+{"level":"error","message":"Division error: Division by zero is not allowed","service":"calculator-microservice"}
+{"level":"info","message":"Exponentiation operation with parameters 9 and 0","service":"calculator-microservice"}
+{"level":"info","message":"Exponentiation operation with parameters 9 and 2","service":"calculator-microservice"}
+{"level":"error","message":"n2 is incorrectly defined","service":"calculator-microservice"}
+{"level":"info","message":"Square root operation with parameter 9","service":"calculator-microservice"}
+{"level":"info","message":"Modulo operation with parameters 9 and 2","service":"calculator-microservice"}
+{"level":"info","message":"Modulo operation with parameters 9 and 5","service":"calculator-microservice"}

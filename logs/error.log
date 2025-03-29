@@ -5,3 +5,5 @@
 {"level":"error","message":"n2 is incorrectly defined","service":"calculator-microservice"}
 {"level":"error","message":"Division error: Division by zero is not allowed","service":"calculator-microservice"}
 {"level":"error","message":"n1 is incorrectly defined","service":"calculator-microservice"}
+{"level":"error","message":"Division error: Division by zero is not allowed","service":"calculator-microservice"}
+{"level":"error","message":"n2 is incorrectly defined","service":"calculator-microservice"}
