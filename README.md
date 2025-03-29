@@ -82,6 +82,21 @@ GET /multiply?n1=<number1>&n2=<number2>
 GET /divide?n1=<number1>&n2=<number2>
 ```
 
+### Exponentiation
+```
+GET /exponentiation?n1=<number1>&n2=<number2>
+```
+
+### Square_root
+```
+GET /square_root?n1=<number1>
+```
+
+### Modulo
+```
+GET /modulo?n1=<number1>&n2=<number2>
+```
+
 ## Response Format
 
 ### Success Response
